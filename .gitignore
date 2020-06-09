@@ -1,3 +1,4 @@
 .netrwhist
 env.*
 plugged.*
+autoload/
