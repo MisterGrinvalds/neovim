@@ -1,41 +1,47 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin($VIM_PLUGGED)
 
-" Aesthetics
+" ./init/aesthetics.vim
+Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'nathanaelkane/vim-indent-guides'
-
-" Git
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-
-" Python
-Plug 'psf/black'
-Plug 'shea-parkes/nvim-ipython-repl'
+Plug 'RRethy/vim-illuminate'
 
 " Completion
-Plug 'maralla/completor.vim'
-Plug 'davidhalter/jedi-vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'} 
+Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} 
+Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'} 
+Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'} 
 
-" Tags
-Plug 'majutsushi/tagbar'
-Plug 'numirias/semshi'
-
-" Highlighting
-Plug 'RRethy/vim-illuminate'
+" git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Navigation
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
-Plug 'itchyny/lightline.vim'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'majutsushi/tagbar'
+
+" Python
+Plug 'psf/black'
+Plug 'shea-parkes/nvim-ipython-repl'
 
 " Vim
+Plug 'skywind3000/asyncrun.vim'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-unimpaired'
 
 call plug#end()
 
-source init/shell.vim
+source $XDG_CONFIG_HOME/nvim/init/aesthetics.vim
+source $XDG_CONFIG_HOME/nvim/init/completion.vim
+source $XDG_CONFIG_HOME/nvim/init/git.vim
+source $XDG_CONFIG_HOME/nvim/init/navigation.vim
+source $XDG_CONFIG_HOME/nvim/init/python.vim
+source $XDG_CONFIG_HOME/nvim/init/shell.vim
+source $XDG_CONFIG_HOME/nvim/init/vim.vim
 
