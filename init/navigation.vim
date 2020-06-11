@@ -1,3 +1,13 @@
+" System
+noremap <Tab>b					:buffer<Space>
+noremap <Tab>ba					:badd<Space>
+noremap <Tab>bd					:bdelete<Space>
+noremap <Tab>bw					:bwipeout<Space>
+noremap <Tab><Tab>			:bnext<CR>
+noremap <Tab>s<Tab>			:sbnext<CR>
+noremap <S-Tab><S-Tab>	:bprevious<CR>
+noremap <S-Tab>s<S-Tab>	:sbprevious<CR>
+
 " 'junegunn/fzf.vim'
 noremap <Space>file			:Files<Space>
 noremap <Space>gfile		:GFiles<Space>
