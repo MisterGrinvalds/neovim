@@ -6,7 +6,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'RRethy/vim-illuminate'
 
-" Completion
+" ./init/completion.vim
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim'
@@ -15,22 +15,22 @@ Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'} 
 Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'} 
 
-" git
+" ./init/git.vim
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-" Navigation
+" ./init/navigation.vim
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'majutsushi/tagbar'
 
-" Python
+" ./init/python.vim
 Plug 'psf/black'
 Plug 'shea-parkes/nvim-ipython-repl'
 
-" Vim
+" ./init/vim.vim
 Plug 'skywind3000/asyncrun.vim'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-unimpaired'
