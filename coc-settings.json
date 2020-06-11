@@ -1,0 +1,16 @@
+{
+  "_coc.nvim":"https://github.com/neoclide/coc.nvim",
+  "session.directory":"~/Library/Caches/coc/.vim/sessions", 
+  "coc.preferences.formatOnSaveFiletypes": ["python"],
+  "coc.preferences.hoverTarget": "float",
+  
+  "_coc-python":"https://github.com/neoclide/coc-python",
+  "python.pythonPath":"~/.dotfiles/nvim/env/bin/python",
+  "python.jediEnabled":false,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/.dotfiles/nvim/env/bin/black",
+  "python.autoComplete.addBrackets": true,
+  
+  "_coc-lists":"https://github.com/neoclide/coc-lists",
+  "list.source.grep.excludePatterns": [".*ignore", "**/tags", "**/.git/**"]
+}
