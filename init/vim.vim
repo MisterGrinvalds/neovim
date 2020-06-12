@@ -1,4 +1,5 @@
 " System
+let &shell=('/bin/bash --rcfile ' . $XDG_CONFIG_HOME . '/.bash_profile.sh')
 filetype indent plugin on
 set shiftwidth=2
 set softtabstop=2

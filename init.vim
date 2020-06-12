@@ -42,6 +42,5 @@ source $XDG_CONFIG_HOME/nvim/init/completion.vim
 source $XDG_CONFIG_HOME/nvim/init/git.vim
 source $XDG_CONFIG_HOME/nvim/init/navigation.vim
 source $XDG_CONFIG_HOME/nvim/init/python.vim
-source $XDG_CONFIG_HOME/nvim/init/shell.vim
 source $XDG_CONFIG_HOME/nvim/init/vim.vim
 
