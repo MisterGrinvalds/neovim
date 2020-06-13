@@ -39,14 +39,17 @@ brew install curl ctags neovim node python3 yarn
 
 ### Linux
 ```
-sudo apt update
-sudo apt install curl exuberant-ctags -y neovim node python3 yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install -o Dpkg::Options::="--force-overwrite" yarn
+sudo apt install curl exuberant-ctags -y neovim nodejs python3 python3-dev python3-pip
 ```
 
 ## Linux | Unix Specific
 ```
+yarn global add neovim
 python3 -m pip install virtualenv
-python3 -m virtualenv --python /usr/local/bin/python3 $NEOVIM_VIRTUALENV
+python3 -m virtualenv --python /usr/¿local?/bin/python3 $NEOVIM_VIRTUALENV
 source $XDG_CONFIG_HOME/nvim/env/bin/activate
 pip install black ipython neovim npm psutil setproctitle
 pip install --upgrade git+https://github.com/psf/black.git
