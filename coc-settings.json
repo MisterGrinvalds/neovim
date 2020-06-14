@@ -1,6 +1,5 @@
 {
   "_coc.nvim":"https://github.com/neoclide/coc.nvim",
-  "session.directory":"~/Library/Caches/coc/.vim/sessions", 
   "coc.preferences.formatOnSaveFiletypes": ["python"],
   "coc.preferences.hoverTarget": "float",
   
@@ -12,5 +11,6 @@
   "python.autoComplete.addBrackets": true,
   
   "_coc-lists":"https://github.com/neoclide/coc-lists",
-  "list.source.grep.excludePatterns": [".*ignore", "**/tags", "**/.git/**"]
+  "list.source.grep.excludePatterns": [".*ignore", "**/tags", "**/.git/**"],
+  "session.directory":"~/Library/Caches/coc/.vim/sessions"
 }

@@ -1,4 +1,6 @@
 " 'neoclide/coc.nvim'
+let g:coc_data_home=$XDG_CONFIG_HOME."/.coc"
+
 "" Defaults via <https://github.com/neoclide/coc.nvim#example-vim-configuration>
 """ Settings 
 set hidden
