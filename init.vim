@@ -7,8 +7,6 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'RRethy/vim-illuminate'
 
 " ./init/completion.vim
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim'
 Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'} 
 Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'} 
@@ -17,7 +15,10 @@ Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
 Plug 'marlonfan/coc-phpls', {'do': 'yarn install --frozen-lockfile'} 
 Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'} 
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'} 
+Plug 'neoclide/coc-vimtex', {'do': 'yarn install --frozen-lockfile'} 
 Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'} 
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 
 " ./init/git.vim
 Plug 'tpope/vim-fugitive'
@@ -34,6 +35,9 @@ Plug 'majutsushi/tagbar'
 Plug 'psf/black'
 Plug 'shea-parkes/nvim-ipython-repl'
 
+" ./init/tex.vim
+Plug 'lervag/vimtex'
+
 " ./init/vim.vim
 Plug 'skywind3000/asyncrun.vim'
 Plug 'tpope/vim-sensible'
@@ -46,5 +50,6 @@ source $XDG_CONFIG_HOME/nvim/init/completion.vim
 source $XDG_CONFIG_HOME/nvim/init/git.vim
 source $XDG_CONFIG_HOME/nvim/init/navigation.vim
 source $XDG_CONFIG_HOME/nvim/init/python.vim
+source $XDG_CONFIG_HOME/nvim/init/tex.vim
 source $XDG_CONFIG_HOME/nvim/init/vim.vim
 
