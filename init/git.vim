@@ -17,6 +17,5 @@ nnoremap <space>gits :Gstatus<CR>
 nnoremap <space>gitw :Git whatchanged<CR>
 
 " 'airblade/vim-gitgutter'
-set updatetime=100
 nnoremap <space>fold :GitGutterFold<CR>
 
