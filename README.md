@@ -2,11 +2,11 @@
 
 This implementation of neovim is for Unix and Linux for now. I would like to define a way of deploying this in Windows too.
 
-Plugins are managed via [vim-plug](https://github.com/junegunn/vim-plug) because it is awesome and easy to use. I am utilizing `$XDG_[CACHE|CONFIG|DATA}_HOME` environment variable specifications via my [.bash_profile](https://github.com/MisterGrinvalds/.bash_profile) and keeping everything cleanly and safely tucked away in my [.dotfiles](https://github.com/MisterGrinvalds/.dotfiles) directory.
+Plugins are managed via [vim-plug](https://github.com/junegunn/vim-plug) because it is awesome and easy to use. I am utilizing `$XDG_[CACHE|CONFIG|DATA]_HOME` environment variable specifications via my [.bash_profile](https://github.com/MisterGrinvalds/.bash_profile) and keeping everything cleanly and safely tucked away in my [.dotfiles](https://github.com/MisterGrinvalds/.dotfiles) directory.
 
 Currently working in [Solarized](https://github.com/altercation/vim-colors-solarized) as it reminds me of my 1996 Jeep Cherokee (RIP Rusty). Illuminate words under cursor via [vim-illuminate](https://github.com/RRethy/vim-illuminate) for now. Use indentation guides to make analyzing control flow easier via [Indent Guides](https://github.com/nathanaelkane/vim-indent-guides). Finally, [lightline.vim](https://github.com/itchyny/lightline.vim) gives a great status bar.
 
-Agnostic completion currently being done via [coc.nvim](https://github.com/neoclide/coc.nvim) using a [Virtualenv](https://virtualenv.pypa.io/en/latest/) located at `$XDG_CONFIG_HOME/nvim/env`. Rapid commenting and uncommenting is possible with tpope's [commentary.vim](https://github.com/tpope/vim-commentary). [surround.vim](https://github.com/tpope/vim-surround) is another winner from tpope that allows for an easier way to change surrounding characters ('...', "...", \<exmpl\>...\</exmpl\>, etc.)
+Agnostic completion currently being done via [coc.nvim](https://github.com/neoclide/coc.nvim) using a [virtualenv](https://virtualenv.pypa.io/en/latest/) located at `$XDG_CONFIG_HOME/nvim/env`. Rapid commenting and uncommenting is possible with tpope's [commentary.vim](https://github.com/tpope/vim-commentary). [surround.vim](https://github.com/tpope/vim-surround) is another winner from tpope that allows for an easier way to change surrounding characters ('...', "...", \<exmpl\>...\</exmpl\>, etc.)
 
 Git tools for neovim include [fugitive.vim](https://github.com/tpope/vim-fugitive) which keeps you in neovim and enhances diffs, commits, and more. Changes in the current document are indicated in the left margin using [vim-gitgutter](https://github.com/airblade/vim-gitgutter).
 
@@ -29,36 +29,9 @@ Git aliases are copied over from my [.dotfiles git aliases](https://github.com/M
 
 # Installation
 
-## OS Specific
+## Linux and Unix
 
-### Mac OS X
-```
-brew update
-brew install curl ctags neovim node python3 yarn
-#yarn global add neovim
-python3 -m pip install virtualenv
-python3 -m virtualenv --python /usr/local/bin/python3 $NEOVIM_VIRTUALENV
-source $XDG_CONFIG_HOME/nvim/env/bin/activate
-pip install black ipython neovim npm psutil setproctitle
-#pip install --upgrade git+https://github.com/psf/black.git
-deactivate
-curl -fLo $XDG_CONFIG_HOME/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-### Linux
-```
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update && sudo apt install -o Dpkg::Options::="--force-overwrite" yarn
-sudo apt install curl exuberant-ctags -y neovim nodejs python3 python3-dev python3-pip
-#yarn global add neovim
-python3 -m pip install virtualenv
-python3 -m virtualenv --python /usr/bin/python3 $NEOVIM_VIRTUALENV
-source $XDG_CONFIG_HOME/nvim/env/bin/activate
-pip install black ipython neovim npm psutil setproctitle
-#pip install --upgrade git+https://github.com/psf/black.git
-deactivate
-curl -fLo $XDG_CONFIG_HOME/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-```
+1. Clone this repository
+2. Change into its directory
+3. Execute `initialize.sh`
 
