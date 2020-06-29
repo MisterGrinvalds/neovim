@@ -1,3 +1,6 @@
+" System
+set cmdheight=2
+
 " 'itchyny/lightline.vim'
 set noshowmode
 
@@ -54,5 +57,5 @@ colorscheme solarized
 let g:indent_guides_enable_on_vim_startup = 1
 
 " 'RRethy/vim-illuminate'
-noremap <Space>ill :IlluminationToggle<CR>
+noremap <S-Space>ill :IlluminationToggle<CR>
 let g:Illuminate_ftHighlightGroups = {}
