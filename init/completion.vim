@@ -1,5 +1,16 @@
 " 'neoclide/coc.nvim'
 let g:coc_data_home=$XDG_CONFIG_HOME."/.coc"
+let g:coc_global_extensions = [
+    \ 'coc-css',
+    \ 'coc-html',
+    \ 'coc-json',
+    \ 'coc-lists',
+    \ 'coc-phpls',
+    \ 'coc-python',
+    \ 'coc-tsserver',
+    \ 'coc-vimtex',
+    \ 'coc-yaml',
+  \ ]
 set nobackup				" Issue #649
 set nowritebackup		" Issue #649
 set shortmess+=c

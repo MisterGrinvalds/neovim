@@ -8,15 +8,6 @@ Plug 'RRethy/vim-illuminate'
 
 " ./init/completion.vim
 Plug 'neoclide/coc.nvim'
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'} 
-Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'} 
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'} 
-Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} 
-Plug 'marlonfan/coc-phpls', {'do': 'yarn install --frozen-lockfile'} 
-Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'} 
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'} 
-Plug 'neoclide/coc-vimtex', {'do': 'yarn install --frozen-lockfile'} 
-Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'} 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
