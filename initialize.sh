@@ -28,6 +28,7 @@ if [[ $OSTYPE = "darwin"* || $OSTYPE = "linux-gnu" ]]; then
 			pip install --upgrade git+https://github.com/psf/black.git
 			deactivate
 			curl -vfLo $XDG_CONFIG_HOME/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+			cd $DOTFILES/nvim && yarn install
 		fi
 
 		if [[ $OSTYPE = "linux-gnu" ]]; then
@@ -43,6 +44,7 @@ if [[ $OSTYPE = "darwin"* || $OSTYPE = "linux-gnu" ]]; then
 			pip install --upgrade git+https://github.com/psf/black.git
 			deactivate
 			curl -fLo $XDG_CONFIG_HOME/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+			cd $DOTFILES/nvim && yarn install
 		fi
 	fi
 fi
