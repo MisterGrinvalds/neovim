@@ -1,5 +1,5 @@
 " System
-noremap <Tab>b					:buffer<Space>
+noremap <Tab>b					:Buffers<Space>
 noremap <Tab>ba					:badd<Space>
 noremap <Tab>bd					:bdelete<Space>
 noremap <Tab>bw					:bwipeout<Space>
@@ -37,4 +37,8 @@ autocmd FileType nerdtree nmap <buffer> <right> o
 " 'majutsushi/tagbar'
 let g:tagbar_show_linenumbers=-1
 noremap <Space>tag :TagbarToggle<CR>
+
+" '
+noremap <Tab>off				:BufOnly<CR>
+noremap <Tab>on					:BufOnly<Space>
 

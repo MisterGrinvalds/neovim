@@ -21,6 +21,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'majutsushi/tagbar'
+Plug 'schickling/vim-bufonly'
 
 " ./init/python.vim
 Plug 'psf/black'
