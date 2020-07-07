@@ -4,6 +4,10 @@ set cmdheight=2
 " 'itchyny/lightline.vim'
 set noshowmode
 
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
+
 function! GitGutterForLightLine()
   let deltas = GitGutterGetHunkSummary()
   if winwidth(0) < 120
@@ -32,7 +36,7 @@ let g:lightline = {
 	\ 'colorscheme': 'solarized',
 	\ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
-  \             [ 'gitrepo', 'gitbranch', 'gitgutter' ],
+  \             [ 'gitrepo', 'gitbranch', 'gitgutter', 'cocstatus', 'currentfunction' ],
   \             [ 'readonly', 'filename', 'modified' ]],
   \  'right': [ [ 'percent', 'lineinfo' ],
   \             [ 'filetype', 'fileformat', 'fileencoding' ] ]
@@ -42,6 +46,8 @@ let g:lightline = {
   \  'right': [ [ 'filetype' ] ]
   \ },
   \ 'component_function': {
+	\		'cocstatus': 'coc#status',
+	\		'currentfunction': 'CocCurrentFunction',
   \   'gitbranch': 'fugitive#head',
   \   'gitgutter': 'GitGutterForLightLine',
   \   'gitrepo': 'GitRepoForLightLine',
