@@ -24,6 +24,7 @@ noremap <Tab>buf				:Buffers<CR>
 noremap <Tab>win				:Windows<CR>
 
 " 'preservim/nerdtree
+let g:NERDTreeBookmarksFile=$DOTFILES."/.NERDTreeBookmarks"
 let g:NERDTreeShowHidden=1
 let g:NERDTreeShowLineNumbers=1
 autocmd StdinReadPre * let s:std_in=1
