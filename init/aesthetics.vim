@@ -48,7 +48,7 @@ let g:lightline = {
   \ 'component_function': {
 	\		'cocstatus': 'coc#status',
 	\		'currentfunction': 'CocCurrentFunction',
-  \   'gitbranch': 'fugitive#head',
+  \   'gitbranch': 'fugitiveHead()',
   \   'gitgutter': 'GitGutterForLightLine',
   \   'gitrepo': 'GitRepoForLightLine',
   \ },
