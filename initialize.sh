@@ -6,7 +6,12 @@ if [[ $OSTYPE = "darwin"* || $OSTYPE = "linux-gnu" ]]; then
 		mkdir "$DOTFILES/nvim"
 	fi
 	
-	rsync -avr --exclude=".doc*" --exclude=".git*" --exclude="initialize.sh" --exclude="README.md" ./ "$DOTFILES/nvim"
+	rsync -avr \
+		--exclude=".doc*" \
+		--exclude=".git*" \
+		--exclude="initialize.sh" \
+		--exclude="README.md" \
+		./ "$DOTFILES/nvim"
 	
 	valid_responses=('y' 'n')
 	while [[ ! " ${valid_responses[@]} " =~ " $reply " ]]; do
