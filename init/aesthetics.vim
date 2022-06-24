@@ -32,8 +32,8 @@ function! GitRepoForLightLine()
   endif
 endfunction
 
+"	\ 'colorscheme': 'solarized',
 let g:lightline = {
-	\ 'colorscheme': 'solarized',
 	\ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
   \             [ 'gitrepo', 'gitbranch', 'gitgutter', 'cocstatus', 'currentfunction' ],
@@ -56,8 +56,8 @@ let g:lightline = {
 
 " 'altercation/vim-colors-solarized'
 syntax enable
-set background=dark
-colorscheme solarized
+"colorscheme solarized
+"set background=dark
 
 " 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
