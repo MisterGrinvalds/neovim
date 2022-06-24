@@ -24,7 +24,7 @@ if [[ $OSTYPE = "darwin"* || $OSTYPE = "linux-gnu" ]]; then
 			echo "Running Mac Installer Script"
 			brew update && brew install curl ctags neovim node python3 yarn
 			python3 -m pip install virtualenv
-			python3 -m virtualenv --python /usr/local/bin/python3 $NEOVIM_VIRTUALENV
+			python3 -m virtualenv --python "$HOMEBREW_BIN_PATH/python3" $NEOVIM_VIRTUALENV
 			source $XDG_CONFIG_HOME/nvim/env/bin/activate
 			pip install black ipython neovim npm psutil setproctitle
 			pip install --upgrade git+https://github.com/psf/black.git
@@ -40,7 +40,7 @@ if [[ $OSTYPE = "darwin"* || $OSTYPE = "linux-gnu" ]]; then
 			sudo apt update && sudo apt install -o Dpkg::Options::="--force-overwrite" yarn
 			sudo apt install curl exuberant-ctags -y neovim nodejs python3 python3-dev python3-pip
 			python3 -m pip install virtualenv
-			python3 -m virtualenv --python /usr/bin/python3 $NEOVIM_VIRTUALENV
+			python3 -m virtualenv --python "$HOMEBREW_BIN_PATH/python3" $NEOVIM_VIRTUALENV
 			source $XDG_CONFIG_HOME/nvim/env/bin/activate
 			pip install black ipython neovim npm psutil setproctitle
 			pip install --upgrade git+https://github.com/psf/black.git
